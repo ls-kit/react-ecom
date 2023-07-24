@@ -1,4 +1,4 @@
-import React from 'react'
+import giftImg from '../../assets/images/gifts.png'
 
 export default function Gift() {
   return (
@@ -10,7 +10,7 @@ export default function Gift() {
           <div className="col-md-5">
             <div className="img_container">
               <div className="img-box">
-                <img src="images/gifts.png" alt=""/>
+                <img src={giftImg} alt=""/>
               </div>
             </div>
           </div>

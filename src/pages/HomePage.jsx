@@ -40,7 +40,7 @@ export default function HomePage() {
 
   {/* <!-- gift section --> */}
 
-  {/* <Gift/> */}
+  <Gift/>
 
 
   {/* <!-- end gift section --> */}

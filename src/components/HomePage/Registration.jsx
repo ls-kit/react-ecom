@@ -16,7 +16,7 @@ export default function Registration() {
     // console.log(registrationData);
 
     // Save registration data to local storage
-    const existingData = localStorage.getItem("registrationData");
+    const existingData = JSON.parse(localStorage.getItem("registrationData"));
     if (
       existingData &&
       existingData.email === email &&

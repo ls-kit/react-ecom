@@ -48,7 +48,7 @@ export default function HomePage() {
 
   {/* <!-- contact section --> */}
 
-  {/* <ContactUs/> */}
+  <ContactUs/>
 
   {/* <!-- end contact section --> */}
 

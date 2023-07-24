@@ -53,12 +53,12 @@ export default function HomePage() {
   {/* <!-- end contact section --> */}
 
   {/* <!-- client section --> */}
-  {/* <Client/> */}
+  <Client/>
   {/* <!-- end client section --> */}
 
   {/* <!-- info section --> */}
 
- {/* <Info/> */}
+ <Info/>
 
   {/* <!-- end info section --> */}
 

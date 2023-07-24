@@ -33,7 +33,7 @@ export default function HomePage() {
 
   {/* <!-- why section --> */}
 
-  {/* <WhyShop/> */}
+  <WhyShop/>
 
   {/* <!-- end why section --> */}
 

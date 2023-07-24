@@ -1,17 +1,20 @@
 import { useRef } from "react"
 import { Link } from "react-router-dom"
 
-export default function Login() {
+export default function Registration() {
+    const nameRef = useRef()
     const emailRef = useRef()
     const passwordRef = useRef()
 
 
-    const handleLogin = (e)=>{
+    const handleRegistration = (e)=>{
         e.preventDefault()
+        const name=nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        const loginData = {email,password}
-        console.log(loginData)
+        const registrationData = {name,email,password}
+        console.log(registrationData)
+        
     }
 
 
@@ -25,7 +28,7 @@ export default function Login() {
     <div className="container px-0">
       <div className="heading_container ">
         <h2 className="">
-          Login
+          Registration
         </h2>
       </div>
     </div>
@@ -39,10 +42,10 @@ export default function Login() {
           </div>
         </div>
         <div className="col-md-6 col-lg-5 px-0">
-          <form onSubmit={handleLogin}>
-            {/* <div>
-              <input type="text" placeholder="Name" />
-            </div> */}
+          <form onSubmit={handleRegistration}>
+            <div>
+              <input type="text" placeholder="Name" ref={nameRef} />
+            </div>
             <div>
               <input type="email" placeholder="Email" ref={emailRef} />
             </div>
@@ -52,7 +55,7 @@ export default function Login() {
             {/* <div>
               <input type="text" className="message-box" placeholder="Message" />
             </div> */}
-        <h6>Do not have an account? please <Link to={'/registration'} className="text-success">Register</Link></h6>
+            <h6>Already have an account? please <Link to={'/login'} className="text-success">Login</Link></h6>
             <div className="d-flex ">
               <button type="submit">
                 SEND

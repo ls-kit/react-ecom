@@ -1,5 +1,23 @@
+import { useRef } from "react"
 
 export default function Login() {
+    const emailRef = useRef()
+    const passwordRef = useRef()
+
+
+    const handleLogin = (e)=>{
+        e.preventDefault()
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
+        const loginData = {email,password}
+        console.log(loginData)
+    }
+
+
+
+
+
+
   return (
     <div>
         <section className="contact_section ">
@@ -20,15 +38,15 @@ export default function Login() {
           </div>
         </div>
         <div className="col-md-6 col-lg-5 px-0">
-          <form action="#">
+          <form onSubmit={handleLogin}>
             {/* <div>
               <input type="text" placeholder="Name" />
             </div> */}
             <div>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" ref={emailRef} />
             </div>
             <div>
-              <input type="password" placeholder="******" />
+              <input type="password" placeholder="******" ref={passwordRef} />
             </div>
             {/* <div>
               <input type="text" className="message-box" placeholder="Message" />

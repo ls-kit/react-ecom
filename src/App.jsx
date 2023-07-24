@@ -9,6 +9,7 @@ import TestimonialPage from './pages/TestimonialPage'
 import LoginPage from './pages/LoginPage'
 import Header from './components/HomePage/Header'
 import Footer from './components/Shared/Footer'
+import ScrollToTop from 'react-scroll-to-top'
 
 function App() {
 
@@ -30,6 +31,12 @@ function App() {
       <Route path='/' element={<HomePage/>} />
     </Routes>
       <Footer/>
+      <ScrollToTop
+                smooth
+                color="#E12454"
+                viewBox="0 0 250 250"
+                style={{right: 30, bottom: 50 }}
+            />
     </>
   )
 }

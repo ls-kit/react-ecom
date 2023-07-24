@@ -24,7 +24,7 @@ export default function Login() {
     <div className="container px-0">
       <div className="heading_container ">
         <h2 className="">
-          Contact Us
+          Login
         </h2>
       </div>
     </div>

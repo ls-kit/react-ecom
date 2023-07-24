@@ -11,7 +11,7 @@ export default function Client() {
       </div>
     </div>
     <div className="container px-0">
-      <div id="customCarousel2" className="carousel  carousel-fade" data-ride="carousel">
+      <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
           <div className="carousel-item active">
             <div className="box">
@@ -69,14 +69,14 @@ export default function Client() {
           </div>
         </div>
         <div className="carousel_btn-box">
-          <a className="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
-            <i className="fa fa-angle-left" aria-hidden="true"></i>
-            <span className="sr-only">Previous</span>
-          </a>
-          <a className="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
-            <i className="fa fa-angle-right" aria-hidden="true"></i>
-            <span className="sr-only">Next</span>
-          </a>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import './App.css'
 import HomePage from './pages/HomePage'
 import ShopPage from './pages/ShopPage'
 import WhyPage from './pages/WhyPage'
+import TestimonialPage from './pages/TestimonialPage'
 import Header from './components/HomePage/Header'
 import Footer from './components/Shared/Footer'
 
@@ -20,7 +21,7 @@ function App() {
       <Route path='/' element={<HomePage/>} />
       <Route path='/shop' element={<ShopPage/>} />
       <Route path='/why' element={<WhyPage/>} />
-      <Route path='/testimonial' element={<HomePage/>} />
+      <Route path='/testimonial' element={<TestimonialPage/>} />
       <Route path='/contact' element={<HomePage/>} />
       <Route path='/login' element={<HomePage/>} />
       <Route path='/cart' element={<HomePage/>} />

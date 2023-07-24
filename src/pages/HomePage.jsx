@@ -27,7 +27,7 @@ export default function HomePage() {
 
   {/* <!-- saving section --> */}
 
-  {/* <Saving/> */}
+  <Saving/>
 
   {/* <!-- end saving section --> */}
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import saving from '../../assets/images/saving-img.png'
 
 export default function Saving() {
   return (
@@ -9,7 +9,7 @@ export default function Saving() {
         <div className="row">
           <div className="col-lg-6">
             <div className="img-box">
-              <img src="images/saving-img.png" alt=""/>
+              <img src={saving} alt=""/>
             </div>
           </div>
           <div className="col-lg-6">

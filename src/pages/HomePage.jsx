@@ -7,6 +7,7 @@ import Gift from '../components/HomePage/Gift'
 import ContactUs from '../components/HomePage/ContactUs'
 import Client from '../components/HomePage/Client'
 import Info from '../components/HomePage/Info'
+import Footer from '../components/Shared/Footer'
 import '../index.css'
 
 export default function HomePage() {
@@ -63,7 +64,7 @@ export default function HomePage() {
   {/* <!-- end info section --> */}
 
   {/* <!-- footer section --> */}
-    
+<Footer/>
     {/* <!-- footer section --> */}
 
 

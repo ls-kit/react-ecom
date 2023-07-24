@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import '../../index.css'
 export default function Header() {
   return (
@@ -18,37 +19,37 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav  ">
             <li className="nav-item active">
-              <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+              <Link to={'/'} className="nav-link" >Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="shop.html">
+              <Link to={'/shop'} className="nav-link">
                 Shop
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="why.html">
+              <Link to={'/why'} className="nav-link">
                 Why Us
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="testimonial.html">
+              <Link to={'/testimonial'} className="nav-link">
                 Testimonial
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="contact.html">Contact Us</a>
+              <Link to={'/contact'} className="nav-link">Contact Us</Link>
             </li>
           </ul>
           <div className="user_option">
-            <a href="">
+            <Link to={'/login'} >
               <i className="fa fa-user" aria-hidden="true"></i>
               <span>
                 Login
               </span>
-            </a>
-            <a href="">
+            </Link>
+            <Link to={'/cart'} >
               <i className="fa fa-shopping-bag" aria-hidden="true"></i>
-            </a>
+            </Link>
             <form className="form-inline ">
               <button className="btn nav_search-btn" type="submit">
                 <i className="fa fa-search" aria-hidden="true"></i>

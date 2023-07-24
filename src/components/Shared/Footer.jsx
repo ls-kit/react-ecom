@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://lskit.com/">Free Html Templates</a>
+          <a href="https://lskit.com/">LSKIT</a>
         </p>
       </div>
     </footer>

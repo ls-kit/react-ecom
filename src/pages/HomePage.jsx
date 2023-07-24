@@ -1,4 +1,3 @@
-import Header from '../components/HomePage/Header'
 import Slider from '../components/HomePage/Slider'
 import Shop from '../components/HomePage/Shop'
 import Saving from '../components/HomePage/Saving'
@@ -7,7 +6,6 @@ import Gift from '../components/HomePage/Gift'
 import ContactUs from '../components/HomePage/ContactUs'
 import Client from '../components/HomePage/Client'
 import Info from '../components/HomePage/Info'
-import Footer from '../components/Shared/Footer'
 import '../index.css'
 
 export default function HomePage() {
@@ -15,7 +13,7 @@ export default function HomePage() {
     <div>
   {/* <!-- start hero area --> */}
   <div className="hero_area">
-    <Header/>
+    {/* <Header/> */}
     <Slider/>
   </div>
   {/* <!-- end hero area --> */}
@@ -64,7 +62,7 @@ export default function HomePage() {
   {/* <!-- end info section --> */}
 
   {/* <!-- footer section --> */}
-<Footer/>
+{/* <Footer/> */}
     {/* <!-- footer section --> */}
 
 

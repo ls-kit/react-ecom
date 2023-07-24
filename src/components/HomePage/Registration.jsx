@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function Registration() {
   const nameRef = useRef();
@@ -12,10 +13,36 @@ export default function Registration() {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
     const registrationData = { name, email, password };
-    console.log(registrationData);
+    // console.log(registrationData);
 
     // Save registration data to local storage
-    localStorage.setItem("registrationData", JSON.stringify(registrationData));
+    const existingData = localStorage.getItem("registrationData");
+    if (
+      existingData &&
+      existingData.email === email &&
+      existingData.password === password
+    ) {
+      // Login success
+      // Show a success toast or alert
+     toast.error("You already registered. Please login");
+     nameRef.current.value =''
+     emailRef.current.value =''
+     passwordRef.current.value =''
+    } else {
+      // User is not registered, save registration data to local storage
+     localStorage.setItem(
+        "registrationData",
+        JSON.stringify(registrationData)
+      );
+    toast.success("Successfully registered!")
+     nameRef.current.value =''
+     emailRef.current.value =''
+     passwordRef.current.value =''
+
+      // Optionally, you can redirect to another page after saving the data.
+      // For example, after successful registration, redirect to a "success" page:
+      // window.location.href = "/success";
+    }
   };
 
   return (

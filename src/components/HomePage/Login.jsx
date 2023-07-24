@@ -1,5 +1,6 @@
 import { useRef } from "react"
 import { Link } from "react-router-dom"
+import { toast } from "react-toastify"
 
 export default function Login() {
     const emailRef = useRef()
@@ -10,8 +11,17 @@ export default function Login() {
         e.preventDefault()
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        const loginData = {email,password}
-        console.log(loginData)
+        // const loginData = {email,password}
+        // console.log(loginData)
+        const existingData = JSON.parse(localStorage.getItem("registrationData"));
+        if (existingData && existingData.email === email && existingData.password === password) {
+          // Login success
+          // Show a success toast or alert
+          toast.success("Login success! Welcome back!");
+        } else {
+          // Login failed, show an alert
+          toast.error("Invalid email or password. Please register first.");
+        }
     }
 
 

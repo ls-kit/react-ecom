@@ -13,6 +13,8 @@ import ScrollToTop from "react-scroll-to-top";
 import WhatsAppWidget from "react-whatsapp-chat-widget";
 import "react-whatsapp-chat-widget/index.css";
 import RegistrationPage from "./pages/RegistrationPage";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -42,10 +44,11 @@ function App() {
         companyName="Giftos"
         chatMessage="Hello! 👋🏼 welcome to Giftos Support. How can we assist you?"
         phoneNo="8801643282147"
-        autoOpen={true}
+        autoOpen={false}
         autoOpenTimer={0}
         iconColor="#E12454"
       />
+      <ToastContainer/>
     </>
   );
 }

@@ -21,7 +21,7 @@ export default function HomePage() {
 
   {/* <!-- shop section --> */}
 
-  {/* <Shop/> */}
+  <Shop/>
 
   {/* <!-- end shop section --> */}
 
